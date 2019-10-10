@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand brand" href="#">
+        <img src="/assets/logo.svg" alt="logo" style="width:40px;">
+        <span class="link">Brighton Academy</span>
+    </a>
+
+    <!-- Links -->
+
+    <ul class="navbar-nav ml-auto" *ngIf="hasNavbarLinks">
+        <li>
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><span class="link">User</span></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item"  [routerLink]="['/signup']">SignUp</a>
+                    <a href="#" class="dropdown-item" [routerLink]="['/login']">Login</a>
+                </div>
+                </div>
+           
+        </li>
+        <li>
+            <div class="dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><span class="link">Mentor</span></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item"  [routerLink]="['/mentor-signup']">SignUp</a>
+                    <a href="#" class="dropdown-item" [routerLink]="['/mentor-login']">Login</a>
+                </div>
+                </div> 
+            
+        </li>
+        <li>
+            
+            <a class="nav-link" [routerLink]="['/admin-login']"><span class="link">Admin</span></a>
+        </li>
+    </ul>
+</nav>
+
+
